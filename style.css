@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+.logo{
+margin: 0px 15px;
+}
+.logo img{
+    margin: 5px 15px;
+    height: 50px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 20px 15px;
+}
+ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    background:url(/apple-background.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: .2;
+}
+.main-header{
+    color: rgb(240, 15, 15);
+    font-size: 4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 5px;
+}
+.para-one{
+    font-size: 35px;
+}
+.para-two{
+    padding: 15px 10px;
+    font-size: 20px;
+}
+.btn{
+    border: 3px solid white;
+    background-color: rgb(240, 15, 15);
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+.btn a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: brown;
+}
+.services-container {
+    margin: 92px 0px;
+}
+.service-header{
+    color: rgb(240, 15, 15);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 35px;
+    margin: 3px 6px;
+    border-radius: 23px;
+}
+#services .box img{
+    height: 100px; 
+    margin: auto;
+    display: block;
+}
+.box-sub-header{
+    font-size: 2.5rem;
+    border: 12px;
+    text-align: center;
+}
+.box-text-center{
+    text-align: center;
+}
